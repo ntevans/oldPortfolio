@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Getting to know more about Nicholas Evans">
+    <meta name="keywords" content="Nicholas Evans, Computer Engineer, Software Engineer, Engineer">
+    <meta name="author" content="Nicholas Evans">
+    <title>Nicholas Evans - Service</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/iconN.ico"/>
+    <link rel="stylesheet" href="./css/styleService.css">
+</head>
+<body>
+    <!-- BUTTON TO TOP -->
+    <button id="buttonToTop">
+        <i class="material-icons" title="Return to top of page">expand_less</i>
+    </button>
+    <!-- HEADER + IMAGE -->
+    <header>
+        <div class="container">
+            <div id="namePlate">
+                <h1>Nicholas Evans</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li class = "current"><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="pageHead">
+        <div class="container">
+            <h1>SERVICE</h1>
+        </div>
+    </section>
+    <section id="service">
+        <div class="container">
+            <div class="serviceBox">
+                <div class="title">
+                    <img src="img/pageImages/slam.jpg">
+                    <h2>Sophomores Leading and Motivating</h2>
+                </div>
+                <div class="serviceText">
+                    <p>An A&M organization that served the Bryan/College Station area through many ways such as; cleaning up streets and public parks, supporting other students during test weeks, and fundraising for SLAM’s philanthropy, a nonprofit organization in the Bryan area called “Voices for Kids”</p>
+                </div>
+                <div class="serviceButton">
+                    <a href="https://www.tamuslam.org/" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <div class="title">
+                    <img src="img/pageImages/nrn.jpg">
+                    <h2>Nicaragua Resource Network</h2>
+                </div>
+                <div class="serviceText">
+                    <p>During spring break of 2015, I went to Nicaragua with my church to socialize with and serve the locals who did not have much. We would provide food, worship, and even building houses for them and my father and I ended up sponsoring a Nicaraguan child named Tony</p>
+                </div>
+                <div class="serviceButton">
+                    <a href="http://www.nicaresourcenet.org/" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <div class="title">
+                    <img src="img/pageImages/pals.jpg">
+                    <h2>Peer Assisted Leadership Service (PALS)</h2>
+                </div>
+                <div class="serviceText">
+                    <p>An organization that gave high schoolers the opportunity to travel to the middle schools and elementary schools of the area to mentor the youth in the LISD schools on a weekly basis. When we weren’t doing this however, the organization provided numerous one-time service opportunities all around the city of Austin</p>
+                </div>
+                <div class="serviceButton">
+                    <a href="https://sites.google.com/leanderisd.org/vhs-pals/pals?authuser=0" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <div class="title">
+                    <img src="img/pageImages/acf.jpg">
+                    <h2>Austin Christian Fellowship</h>
+                </div>
+                <div class="serviceText">
+                    <p>For around seven years, my father and I served our local church by prepping and hosting Christian youth groups at our house. These meetings were held weekly throughout the school year and would last around two hours.</p>
+                </div>
+                <div class="serviceButton">
+                    <a href="https://www.acfellowship.org/fourpoints/" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script>
+        const buttonToTop = document.querySelector("#buttonToTop");
+
+        buttonToTop.addEventListener("click", function(){
+            window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+        });
+
+        var mybutton = document.getElementById("buttonToTop");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+            mybutton.style.display = "block";}
+        else {mybutton.style.display = "none";}
+        }
+    </script>
+</body>
+</html>

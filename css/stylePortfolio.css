@@ -1,0 +1,487 @@
+body{
+    font: 15px/1.5 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#ffbfa6;
+}
+
+/* ------ */
+/* Global */
+/* ------ */
+
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------- */
+/* Utility */
+/* ------- */
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#buttonToTop{
+	position:fixed;
+	
+}
+
+#buttonToTop{
+	display: none;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 50%;
+	background-color: #ff5e5e;
+	color: #ffffff;
+	outline: none;
+	cursor: pointer;
+	opacity: 1;
+	animation: fadeIn .5s linear;
+}
+
+#buttonToTop:hover{
+    background-color: #bd1b1b;
+}
+
+/* ------ */
+/* Header */
+/* ------ */
+
+header{
+    background:url('../img/gradientHeader.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 60px;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+header ul{
+    margin-bottom: 15px;
+    list-style: none;
+    text-align: center;
+}
+
+header li{
+    display: inline;
+    padding: 0px 20px 0px 20px;
+    display: inline-block;
+}
+
+header .current a{
+    color:#8b0000;
+}
+
+header a:hover{
+    color:#8b0000;
+}
+
+/* --------- */
+/* PAGE HEAD */
+/* --------- */
+
+#pageHead{
+    text-align: center;
+}
+
+#pageHead{
+    font-size: 30px;
+    color: #ffffff;
+    padding: 50px 0px;
+    margin-bottom: 40px;
+    background:url('../img/HeadPicP.png') no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -------- */
+/* SOFTWARE */
+/* -------- */
+
+.portTitle{
+	text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body .softwareTabs h1 {
+	text-align: center;
+	padding: 40px 0 20px 0;
+	margin: 0;
+}
+
+.softwareTabs {
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+	background: #ffffff;
+	padding: 50px;
+	padding-bottom: 400px;
+	width: 70%;
+	height: 250px;
+	box-shadow: 0 14px 28px #00000040, 0 10px 10px #00000038;
+	border-radius: 15px;
+	min-width: 240px;
+	margin-bottom: 300px;
+}
+
+.softwareTabs .content{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.softwareTabs .content img{
+	border: 7px solid #c22f2f;
+	border-radius: 15px;
+}
+
+.softwareTabs #port1{
+	width: 55%;
+	max-width: 600px;
+}
+
+.softwareTabs #port2{
+	width: 50%;
+	max-width: 500px;
+}
+
+.softwareTabs #port3{
+	width: 45%;
+	max-width: 450px;
+}
+
+.softwareTabs #port4{
+	width: 38%;
+	max-width: 350px;
+}
+
+@media screen and (max-width:700px){
+	.softwareTabs{
+		padding-bottom: 160px;
+	}
+	.softwareTabs img{
+		display: none;
+	}
+}
+
+.softwareTabs input[name="softwareTab-control"] {
+	display: none;
+}
+
+.softwareTabs .content section h2, .softwareTabs ul li label {
+	font-weight: bold;
+	font-size: 18px;
+	color: #ff5c5c;
+}
+
+.softwareTabs ul {
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.softwareTabs ul li {
+	box-sizing: border-box;
+	flex: 1;
+	width: 25%;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.softwareTabs ul li label {
+	transition: all 0.3s ease-in-out;
+	color: #000000;
+	padding: 5px auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	white-space: nowrap;
+	-webkit-touch-callout: none;
+}
+
+.softwareTabs ul li label br {
+	display: none;
+}
+
+.softwareTabs ul li label svg {
+	fill: #000000;
+	height: 1.2em;
+	vertical-align: bottom;
+	margin-right: 0.2em;
+	transition: all 0.2s ease-in-out;
+}
+
+.softwareTabs ul li label:hover, .softwareTabs ul li label:focus, .softwareTabs ul li label:active {
+	outline: 0;
+	color: #000000;
+}
+
+.softwareTabs ul li label:hover svg, .softwareTabs ul li label:focus svg, .softwareTabs ul li label:active svg {
+	fill: #000000;
+}
+
+.softwareTabs .slider {
+	position: relative;
+	width: 25%;
+	transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+}
+
+.softwareTabs .slider .indicator {
+	position: relative;
+	width: 50px;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 4px;
+	background: #ff5c5c;
+	border-radius: 1px;
+}
+
+.softwareTabs .content {
+	 margin-top: 30px;
+}
+
+.softwareTabs .content section {
+	display: none;
+	animation-name: content;
+	animation-direction: normal;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	line-height: 1.4;
+}
+ 
+.softwareTabs .content section h2 {
+	color: #ff5c5c;
+	display: none;
+}
+
+.softwareTabs .content section h2::after {
+	content: "";
+	position: relative;
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: #ff5c5c;
+	margin-top: 5px;
+	left: 1px;
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
+	cursor: default;
+	color: #ff5c5c;
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label svg {
+	fill: #ff5c5c;
+}
+
+@media (max-width: 600px) {
+	 .softwareTabs input[name="softwareTab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
+		background: #00000014;
+	}
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(1):checked ~ .slider {
+	transform: translateX(0%);
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(1):checked ~ .content > section:nth-child(1) {
+	display: block;
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+	cursor: default;
+	color: #ff5c5c;
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label svg {
+	fill: #ff5c5c;
+}
+
+@media (max-width: 600px) {
+	 .softwareTabs input[name="softwareTab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+		background: #00000014;
+	}
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(2):checked ~ .slider {
+	transform: translateX(100%);
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(2):checked ~ .content > section:nth-child(2) {
+	display: block;
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
+	cursor: default;
+	color: #ff5c5c;
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label svg {
+	fill: #ff5c5c;
+}
+
+@media (max-width: 600px) {
+	 .softwareTabs input[name="softwareTab-control"]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
+		background: #00000014;
+	}
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(3):checked ~ .slider {
+	transform: translateX(200%);
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(3):checked ~ .content > section:nth-child(3) {
+	display: block;
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
+	cursor: default;
+	color: #ff5c5c;
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label svg {
+	fill: #ff5c5c;
+}
+
+@media (max-width: 600px) {
+	 .softwareTabs input[name="softwareTab-control"]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
+		background: #00000014;
+	}
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(4):checked ~ .slider {
+	transform: translateX(300%);
+}
+
+.softwareTabs input[name="softwareTab-control"]:nth-of-type(4):checked ~ .content > section:nth-child(4) {
+	display: block;
+}
+
+@keyframes content {
+	 from {
+		opacity: 0;
+		transform: translateY(5%);
+	}
+	 to {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@media (max-width: 1000px) {
+	 .softwareTabs ul li label {
+		white-space: initial;
+	}
+	 .softwareTabs ul li label br {
+		display: initial;
+	}
+	 .softwareTabs ul li label svg {
+		height: 1.5em;
+	}
+}
+
+@media (max-width: 600px) {
+	 .softwareTabs ul li label {
+		padding: 5px;
+		border-radius: 5px;
+	}
+	 .softwareTabs ul li label span {
+		display: none;
+	}
+	 .softwareTabs .slider {
+		display: none;
+	}
+	 .softwareTabs .content {
+		margin-top: 20px;
+	}
+	 .softwareTabs .content section h2 {
+		display: block;
+	}
+}
+ 
+.softwareTabs svg{
+	margin-bottom: 3px;
+}
+
+.softwareTabs .content p{
+	font-size: 18px;
+}
+
+@media screen and (max-width:1194px){
+	.softwareTabs .content p{
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width:700px){
+	.softwareTabs .content p{
+		font-size: 14px;
+	}
+}
+
+.softwareTabs .content a{
+	text-decoration: none;
+    color: #ff5e5e;
+    font-weight: bold;
+    padding: 14px 0px;
+	border-radius: 22px;
+	font-size: 18px;
+}
+
+.softwareTabs .content a:hover{
+    color: #bd1b1b;
+}
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+footer{
+	height: 200px;
+}

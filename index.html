@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Getting to know more about Nicholas Evans">
+    <meta name="keywords" content="Nicholas Evans, Computer Engineer, Software Engineer, Engineer">
+    <meta name="author" content="Nicholas Evans">
+    <title>Nicholas Evans - Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/iconN.ico"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- BUTTON TO TOP -->
+    <button id="buttonToTop">
+        <i class="material-icons" title="Return to top of page">expand_less</i>
+    </button>
+    <!-- HEADER + IMAGE -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- INTRO PARAGRAPH -->
+    <section id="introPara">
+        <div class="container">
+            <div class="introText">
+                <h1>HELLO</h1>
+                <p>My name is Nicholas Evans and I’m currently pursuing my Bachelor of Science as a Computer Engineer at Texas A&M University and I plan to graduate December of 2022. I have learned much about computers, both hardware and software, through Texas A&M's Engineering School, but through my involvement and various leadership positions throughout high school and college, I have developed many crucial skills such as critical thinking, flexibility, and creativity. </p>
+            </div>
+            <div class="introButton">
+                <a href="about.html">ABOUT ME</a>
+            </div>
+       </div>
+    </section>
+    
+
+    <!-- DIRECTORY LINKS -->
+    <section id="indexIntro">
+        <div class="container">
+            <div class="introBox">
+                <div class="introImg">
+                    <img src="img/indexPicP.png">
+                    <div class="imgOverlay">
+                        <div class="overlayText">Check out some of my<br>past and upcoming projects</div>
+                    </div>
+                </div>
+                <div class="introButton">
+                    <a href="portfolio.html">PORTFOLIO</a>
+                </div>
+            </div>
+            <div class="introBox">
+                <div class="introImg">
+                    <img src="img/indexPicQ.png">
+                    <div class="imgOverlay">
+                        <div class="overlayText">Here's some of my school<br>and work experience </div>
+                    </div>
+                </div>
+                <div class="introButton">
+                    <a class="intButton" href="qualifications.html">QUALIFICATIONS</a>
+                </div>
+            </div>
+            <div class="introBox">
+                <div class="introImg">
+                    <img src="img/indexPicS.png">
+                    <div class="imgOverlay">
+                        <div class="overlayText">See some of the ways<br>I've served the community</div>
+                    </div>
+                </div>
+                <div class="introButton">
+                    <a class="intButton" href="service.html">SERVICE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script>
+        const buttonToTop = document.querySelector("#buttonToTop");
+
+        buttonToTop.addEventListener("click", function(){
+            window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+        });
+
+        var mybutton = document.getElementById("buttonToTop");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+            mybutton.style.display = "block";}
+        else {mybutton.style.display = "none";}
+        }
+    </script>
+</body>
+</html>

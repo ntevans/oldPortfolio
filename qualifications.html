@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Getting to know more about Nicholas Evans">
+    <meta name="keywords" content="Nicholas Evans, Computer Engineer, Software Engineer, Engineer">
+    <meta name="author" content="Nicholas Evans">
+    <title>Nicholas Evans - Qualifications</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/iconN.ico"/>
+    <link rel="stylesheet" href="./css/styleQualifications.css">
+</head>
+<body>
+    <!-- BUTTON TO TOP -->
+    <button id="buttonToTop">
+        <i class="material-icons" title="Return to top of page">expand_less</i>
+    </button>
+    <!-- HEADER + IMAGE -->
+    <header>
+        <div class="container">
+            <div id="namePlate">
+                <h1>Nicholas Evans</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class = "current"><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="pageHead">
+        <div class="container">
+            <h1>QUALIFICATIONS</h1>
+        </div>
+    </section>
+    <section id="traits">
+        <div class="title">
+            <h1>PERSONAL TRAITS</h1>
+        </div>
+        <div class="container">
+            <div class="traitBox">
+                <div class="traitIcon">
+                    <img src="img/icons/leadership.png">
+                </div>
+                <div class="traitText">
+                    <h3>LEADERSHIP</h3>
+                </div>
+            </div>
+            <div class="traitBox">
+                <div class="traitIcon">
+                    <img src="img/icons/creativity.png">
+                </div>
+                <div class="traitText">
+                    <h3>CREATIVITY</h3>
+                </div>
+            </div>
+            <div class="traitBox">
+                <div class="traitIcon">
+                    <img src="img/icons/communication.png">
+                </div>
+                <div class="traitText">
+                    <h3>COMMUNICATION</h3>
+                </div>
+            </div>
+            <div class="traitBox">
+                <div class="traitIcon">
+                    <img src="img/icons/passion.png">
+                </div>
+                <div class="traitText">
+                    <h3>PASSION</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skillBars">
+        <h1>PROGRAM SKILLS</h1>
+        <h3>Python</h3>
+        <div class="container">
+            <div id="bar1" class="bar">Advanced</div>
+        </div>
+        <h3>C++</h3>
+        <div class="container">
+            <div id="bar2" class="bar">Advanced</div>
+        </div>
+        <h3>HTML, CSS, & JS</h3>
+        <div class="container">
+            <div id="bar3" class="bar">Advanced</div>
+        </div>
+        <h3>Photoshop</h3>
+        <div class="container">
+            <div id="bar4" class="bar">Advanced</div>
+        </div>
+        <h3>Autodesk Inventor</h3>
+        <div class="container">
+            <div id="bar5" class="bar">Intermediate</div>
+        </div>
+        <h3>Microsoft Excel</h3>
+        <div class="container">
+            <div id="bar6" class="bar">Advanced</div>
+        </div>
+        <h3>WordPress</h3>
+        <div class="container">
+            <div id="bar7" class="bar">Intermediate</div>
+        </div>
+        <h3>Unity</h3>
+        <div class="container">
+            <div id="bar8" class="bar">Beginner</div>
+        </div>
+    </section>
+    <section id="transcript">
+        <a href="https://drive.google.com/file/d/1RfNvOGpRAm6qkqXjYUg1qWvpXp_h3kK5/view?usp=sharing" target="_blank">My Texas A&M Unofficial Transcript</a>
+    </section>
+    <section id="resumeBox">
+        <div class="container">
+            <h1>RESUME</h1>
+            <a href="https://drive.google.com/file/d/1ZL5Ake-HcPLNzIVLQSC27hFMO6kCIc2l/view?usp=sharing" target="_blank">Click here to download resume</a>
+            <div class="resume">
+                <img src="img/resume.png" alt="Resume">
+            </div>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script>
+        const buttonToTop = document.querySelector("#buttonToTop");
+
+        buttonToTop.addEventListener("click", function(){
+            window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+        });
+
+        var mybutton = document.getElementById("buttonToTop");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+            mybutton.style.display = "block";}
+        else {mybutton.style.display = "none";}
+        }
+    </script>
+</body>
+</html>

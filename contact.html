@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Getting to know more about Nicholas Evans">
+    <meta name="keywords" content="Nicholas Evans, Computer Engineer, Software Engineer, Engineer">
+    <meta name="author" content="Nicholas Evans">
+    <title>Nicholas Evans - Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/iconN.ico"/>
+    <link rel="stylesheet" href="./css/styleContact.css">
+</head>
+<body>
+    <!-- BUTTON TO TOP -->
+    <button id="buttonToTop">
+        <i class="material-icons" title="Return to top of page">expand_less</i>
+    </button>
+    <!-- HEADER + IMAGE -->
+    <header>
+        <div class="container">
+            <div id="namePlate">
+                <h1>Nicholas Evans</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li class = "current"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="pageHead">
+        <div class="container">
+            <h1>CONTACT</h1>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="contactLine" id="contact1">
+                <div class="contactImage">
+                    <img src="img/icons/linkedin.png">
+                </div>
+                <div class="contactInfo">
+                    <a href="https://www.linkedin.com/in/nicholas-evans-66260b204/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="contactLine" id="contact2">
+                <div class="contactImage">
+                    <img src="img/icons/email.png">
+                </div>
+                <div class="contactInfo">
+                    <h1>ntevans8@gmail.com</h1>
+                </div>
+            </div>
+            <div class="contactLine" id="contact3">
+                <div class="contactImage">
+                    <img src="img/icons/phone.png">
+                </div>
+                <div class="contactInfo">
+                    <h1>(512)705-9933</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script>
+        const buttonToTop = document.querySelector("#buttonToTop");
+
+        buttonToTop.addEventListener("click", function(){
+            window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+        });
+
+        var mybutton = document.getElementById("buttonToTop");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+            mybutton.style.display = "block";}
+        else {mybutton.style.display = "none";}
+        }
+    </script>
+</body>
+</html>

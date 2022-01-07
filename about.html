@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Getting to know more about Nicholas Evans">
+    <meta name="keywords" content="Nicholas Evans, Computer Engineer, Software Engineer, Engineer">
+    <meta name="author" content="Nicholas Evans">
+    <title>Nicholas Evans - About</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/iconN.ico"/>
+    <link rel="stylesheet" href="./css/styleAbout.css">
+</head>
+<body>
+    <button id="buttonToTop">
+        <i class="material-icons" title="Return to top of page">expand_less</i>
+    </button>
+    <header>
+        <div class="container">
+            <div id="namePlate">
+                <h1>Nicholas Evans</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class = "current"><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="pageHead">
+        <div class="container">
+            <h1>ABOUT ME</h1>
+        </div>
+    </section>
+    <section id="aboutRow">
+        <div class="container">
+            <div class="aboutText">
+                <p>I am a 21-year-old who was born in Plano, TX and lived there for eight years until we moved to Austin, TX, where my family currently lives. Ever since a young age, I have always been very technologically savvy as I had spent a good amount of time and interest on computers. I wanted to learn everything this technology had to offer, and I would even take apart the old, broken down family computer just to see what went on inside. When I was a freshman in high school, and had saved up enough money, this curiosity led me to buy the best computer parts on a budget and build my very first desktop. I didn’t realize it at the time but building that computer would go on to spark my interest enough to make me want to enter a   career in computing.</p>
+            </div>
+            <div class="aboutImage">
+                <img src="img/pageImages/about1.png">
+            </div>
+        </div>
+    </section>
+    <section id="aboutRow">
+        <div id="middleRow" class="container">
+            <div class="aboutImage">
+                <img src="img/pageImages/about2.png">
+            </div>
+            <div class="aboutText">
+                <p>Around the same time that year, my older brother was touring colleges and went on a tour at Texas A&M. My parents had invited me to tag along and, after realizing that would mean I would not have to go to school that day, I eagerly accepted. After walking around the campus and learning about everything A&M had to offer, including the widely acclaimed engineering school, I had fallen in love. It was at this point I knew where and what I wanted to study when I went off to college, and I was going to work hard in high school to make sure that is where I ended up. In the rest of my time in high school, I built up a lot of academic skills through my AP and Dual-Credit courses as well as a lot of leadership skills through the leadership team in my school’s band program so that, when I was a senior, I felt ready for college.</p>
+            </div>
+        </div>
+    </section>
+    <section id="aboutRow">
+        <div class="container">
+            <div class="aboutText">
+                <p>Due to the overly large numbers of engineers entering A&M, by the time I had received my acceptance letter, the program at College Station was full and I had to spend my first year studying the same content but at A&M’s Galveston campus. While it was discouraging that I did not get to study at College Station at first, I worked hard to make sure I got the major I wanted and ended my freshman year with a 3.64. This had granted me automatic acceptance as a Computer Engineer, and I would study at College Station starting the following school year. I am now currently a Junior and am continuing to work hard and maintain good grades while also being apart of organizations that I can serve, and lead in, like Aggie Transition Camps.  </p>
+            </div>
+            <div class="aboutImage">
+                <img src="img/pageImages/about3.png">
+            </div>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script>
+        const buttonToTop = document.querySelector("#buttonToTop");
+
+        buttonToTop.addEventListener("click", function(){
+            window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+        });
+
+        var mybutton = document.getElementById("buttonToTop");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+            mybutton.style.display = "block";}
+        else {mybutton.style.display = "none";}
+        }
+    </script>
+</body>
+</html>
